@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<table style="width:100%">
+  <tr>
+      {% for title in titles %}
+          <th>{{ title }}</th>
+      {% endfor %}
+  </tr>
+  {% for inner_list in my_list %}
+  <tr>
+    {% for k,v in inner_list.items() %}
+        <td>{{ v }}</td>
+    {%  endfor %}
+  </tr>
+  {% endfor %}
+</table>
+
+
+</body>
+</html>
